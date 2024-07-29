@@ -1,4 +1,6 @@
-package ex07.practice;
+package ex08.practice;
+
+import ex07.practice.Data;
 
 /**
  * setter, getter 생성
