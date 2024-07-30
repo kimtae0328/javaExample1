@@ -23,11 +23,12 @@ public class ScannerUtil {
                 // 남아있는 엔터를 제거
                 scan.nextLine();
                 return num;
+            // 예외(Exception) 이름을 적어줌
             } catch (Exception e) {
                 // 예외발생
                 System.out.println("숫자만 입력 가능합니다.");
                 // 입력된 값을 처리
-                // (처리하지 않으면 계속 남아있음)
+                // (처리하지 않으면 계속 남아있음 == 무한루프)
                 scan.nextLine();
             }
         }

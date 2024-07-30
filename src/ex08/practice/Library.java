@@ -7,11 +7,14 @@ import java.util.Scanner;
 import ex07.common.ScannerUtil;
 
 public class Library {
+    // 타입을 미리 지정 함으로써
+    // 꺼낼때 형변환을 할필요가 없다.
     List<Book> bookList = new ArrayList<Book>();
     private Book book;
 
     public Library() {
         bookList.add(new Book(1, "제목1", "작가1"));
+        bookList.add(book);
         bookList.add(new Book(2, "제목2", "작가2"));
         bookList.add(new Book(3, "제목3", "작가3"));
         bookList.add(new Book(4, "제목4", "작가4"));
